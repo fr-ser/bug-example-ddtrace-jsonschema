@@ -50,6 +50,8 @@ Opened issues:
     ERROR test_main.py - referencing.exceptions.NoSuchResource: 'http://json-schema.org/draft-03/schema#'
     ```
 
+   3.1 Fun side note: Running the code (which uses the same code) works: `poetry run main.py`
+   
 4. uninstall ddtrace: `poetry remove ddtrace`
 5. run the test: `poetry run pytest`
 6. it works ¯\_(ツ)_/¯
