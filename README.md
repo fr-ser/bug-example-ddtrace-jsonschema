@@ -2,6 +2,11 @@
 
 This repo is supposed to visualize a bug between ddtrace and jsonschema.
 
+Opened issues:
+
+- <https://github.com/DataDog/dd-trace-py/issues/9950>
+- <https://github.com/python-jsonschema/jsonschema/issues/1289>
+
 ## Requirements
 
 - Python
