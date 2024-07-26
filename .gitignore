@@ -1,0 +1,35 @@
+# python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+setup.py
+docs/_build
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+dist/
+*.egg-info/
+.history
+.venv
+
+# IDEs
+.vscode
+
+# TF
+**/.terraform/*
+*.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.terraform
+out.plan
+plan
+terraform.log
+terraform.tfplan
+terraform.tfstate*
+
+# local development
+.env
+*.http
+.envrc

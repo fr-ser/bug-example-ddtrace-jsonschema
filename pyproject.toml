@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test"
+version = "0.1.0"
+description = ""
+authors = ["Sergej Herbert <sergej.herbert@sennder.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "8.3.2"
+jsonschema = "^4.23.0"
+ddtrace = "^2.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
