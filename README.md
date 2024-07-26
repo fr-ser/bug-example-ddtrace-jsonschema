@@ -1,5 +1,7 @@
 # bug-example-ddtrace-jsonschema
 
+**This only seems to be a bug with Python 3.8. Newer versions work.**
+
 This repo is supposed to visualize a bug between ddtrace and jsonschema.
 
 Opened issues:
