@@ -12,13 +12,15 @@ Opened issues:
 ## Requirements
 
 - Python
-- Poetry (or any other method of installing and running the pip packages)
+- venv (standard python virtual environment)
 
 ## Reproduction steps
 
-1. Install the environment: `poetry install --no-root`
-2. Run the test: `poetry run pytest`
-3. See this error:
+1. Install the environment: `python -m venv .venv`
+2. Activate the environment: `source ./.venv/bin/activate`
+3. Install the dependencies: `pip install -r requirements.txt`
+4. Run the test: `pytest`
+5. See this error:
 
     ```txt
     test_main.py:1: in <module>
@@ -48,12 +50,10 @@ Opened issues:
     .venv/lib/python3.8/site-packages/referencing/_core.py:333: in __getitem__
         raise exceptions.NoSuchResource(ref=uri) from None
     E   referencing.exceptions.NoSuchResource: 'http://json-schema.org/draft-03/schema#'
-    ========================================================================================================== short test summary info ===========================================================================================================
-    ERROR test_main.py - referencing.exceptions.NoSuchResource: 'http://json-schema.org/draft-03/schema#'
     ```
 
-   3.1 Fun side note: Running the code (which uses the same code) works: `poetry run main.py`
-   
-4. uninstall ddtrace: `poetry remove ddtrace`
-5. run the test: `poetry run pytest`
-6. it works ¯\_(ツ)_/¯
+   3.1 Fun side note: Running the code (which uses the same code) works: `python main.py`
+
+6. uninstall ddtrace: `pip uninstall ddtrace`
+7. run the test: `pytest`
+8. it works ¯\_(ツ)_/¯
